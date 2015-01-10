@@ -1,3 +1,7 @@
 .librarian/
 .tmp/
+.vagrant/
+hiera/private/
+hiera/private.yaml
 modules/
+Vagrantfile

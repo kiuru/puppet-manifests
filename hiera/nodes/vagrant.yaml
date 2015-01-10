@@ -1,2 +1,24 @@
 ---
+mysql::server::users:
+  vagrant@localhost:
+    ensure: present
+    max_connections_per_hour: 0
+    max_queries_per_hour: 0
+    max_updates_per_hour: 0
+    max_user_connections: 0
+    password_hash: "%{hiera('vagrant_mysql_password_hash')}"
 
+mysql::server::databases:
+  vagrant_db:
+    ensure: present
+    charset: utf8
+
+mysql::server::grants:
+  vagrant@localhost/vagrant_db.*:
+    ensure: present
+    options:
+      - GRANT
+    privileges:
+      - ALL
+    table: vagrant_db.*
+    user: vagrant@localhost

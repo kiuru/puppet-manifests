@@ -6,4 +6,6 @@
 :merge_behavior: deeper
 :hierarchy:
   - nodes/%{::hostname}
+  - private/%{::hostname}
+  - private
   - common

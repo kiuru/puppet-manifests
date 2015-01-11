@@ -26,6 +26,7 @@ mysql::server::grants:
 apache::default_vhost: false
 apache::default_mods: false
 apache::default_confd_files: false
+apache::mpm_module: prefork
 
 apache::vhosts:
   "%{hostname}":

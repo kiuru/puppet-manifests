@@ -12,3 +12,11 @@ Install dependencies:
 Run Puppet:
 
 	$ puppet apply --hiera_config=hiera.yaml --modulepath=modules/ site.pp
+
+## ToDo
+
+- Enable only necessaries Apache mods and confd files
+- Firewall
+- Backups
+- Create new user
+- Disable root password login

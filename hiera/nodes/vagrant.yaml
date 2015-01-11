@@ -22,3 +22,12 @@ mysql::server::grants:
       - ALL
     table: vagrant_db.*
     user: vagrant@localhost
+
+apache::default_vhost: false
+
+apache::vhosts:
+  "%{hostname}":
+    port: 80
+    docroot: /home/vagrant/public_html/
+    docroot_owner: vagrant
+    docroot_group: vagrant

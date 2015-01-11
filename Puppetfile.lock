@@ -1,6 +1,8 @@
 FORGE
   remote: https://forgeapi.puppetlabs.com
   specs:
+    attachmentgenie-ssh (1.4.1)
+      puppetlabs-stdlib (>= 2.2.1)
     nanliu-staging (1.0.2)
     puppetlabs-apache (1.2.0)
       puppetlabs-concat (>= 1.1.1)
@@ -25,6 +27,7 @@ GIT
     kiuru-profile (0.0.1)
 
 DEPENDENCIES
+  attachmentgenie-ssh (~> 1.4.1)
   kiuru-profile (>= 0)
   puppetlabs-apache (~> 1.2.0)
   puppetlabs-git (~> 0.3.0)

@@ -24,6 +24,8 @@ mysql::server::grants:
     user: vagrant@localhost
 
 apache::default_vhost: false
+apache::default_mods: false
+apache::default_confd_files: false
 
 apache::vhosts:
   "%{hostname}":

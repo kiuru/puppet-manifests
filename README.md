@@ -20,3 +20,4 @@ Run Puppet:
 - Backups
 - Create new user
 - Disable root password login
+- Hide Apache server signatures

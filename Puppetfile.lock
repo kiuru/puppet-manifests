@@ -1,8 +1,6 @@
 FORGE
   remote: https://forgeapi.puppetlabs.com
   specs:
-    attachmentgenie-ssh (1.4.1)
-      puppetlabs-stdlib (>= 2.2.1)
     nanliu-staging (1.0.2)
     puppetlabs-apache (1.2.0)
       puppetlabs-concat (>= 1.1.1)
@@ -18,19 +16,21 @@ FORGE
       puppetlabs-stdlib (< 5.0.0, >= 3.2.0)
     puppetlabs-stdlib (4.5.0)
     puppetlabs-vcsrepo (1.2.0)
+    saz-ssh (2.4.0)
+      puppetlabs-stdlib (>= 2.2.1)
 
 GIT
   remote: git://github.com/kiuru/puppet-profile.git
   ref: master
-  sha: 72b722d2da701fffcea9714cc9fc0d68433df7f2
+  sha: 2c68b9e07d8772978a876bf5e53bba356b54afbf
   specs:
     kiuru-profile (0.0.1)
 
 DEPENDENCIES
-  attachmentgenie-ssh (~> 1.4.1)
   kiuru-profile (>= 0)
   puppetlabs-apache (~> 1.2.0)
   puppetlabs-git (~> 0.3.0)
   puppetlabs-mysql (~> 3.1.0)
   puppetlabs-ntp (~> 3.3.0)
+  saz-ssh (~> 2.4.0)
 
